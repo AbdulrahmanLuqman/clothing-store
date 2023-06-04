@@ -41,7 +41,8 @@ export default defineComponent({
 <template>
   <Navbar />
 
-  
+  <RouterView></RouterView>
+
 </template>
 
 <style scoped></style>
