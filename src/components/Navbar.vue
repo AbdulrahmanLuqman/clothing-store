@@ -14,7 +14,7 @@
 
 <template>
 
-    <header class="w-full bg-gray-200 shadow-lg h-[10vh] flex items-center justify-between px-20  max-[963px]:px-4">
+    <header class="w-full bg-gray-200 shadow-lg h-[10vh] flex items-center justify-between px-20  max-[963px]:px-4 sticky top-0">
 
         <RouterLink to="/">
           <div class="flex items-center">
