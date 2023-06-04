@@ -1,9 +1,10 @@
 <script>
 
 import { defineComponent } from 'vue'
+import Navbar from './components/Navbar.vue'
 
 export default defineComponent({
-
+  components: { Navbar },
   data() {
     return {
       stores: [
@@ -37,6 +38,10 @@ export default defineComponent({
 
 </script>
 
-<template></template>
+<template>
+  <Navbar />
+
+  
+</template>
 
 <style scoped></style>
