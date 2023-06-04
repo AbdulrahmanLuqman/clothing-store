@@ -25,7 +25,7 @@ export default defineComponent({
         <div class="grid lg:grid-cols-4 gap-8 sm:grid-cols-2">
             <!-- background -->
             <div class="h-[500px] w-full rounded-xl bg-white flex flex-col items-center justify-between" v-for="cloth in clothings" v-show="cloth.category === 'electronics'">
-                <p class="text-[#B86EE7] text-[19px] text-center font-semibold">Category: jewelery</p>
+                <p class="text-[#B86EE7] text-[19px] text-center font-semibold">Category: electronics</p>
                 <img :src=cloth.image width="150" alt="">
                 <div class="bg-[#B86EE7] h-[30%] w-full rounded-b-xl p-4 flex flex-col justify-between">
                    <p class="w-full font-semibold">{{ cloth.title }}</p>
