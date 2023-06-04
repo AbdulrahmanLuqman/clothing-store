@@ -1,6 +1,6 @@
 import { defineStore } from "pinia";
 
-export default function Store() {
+export default function elementStore() {
     return defineStore('elements', {
         state: () => ({
             arrayStore: [
@@ -204,6 +204,7 @@ export default function Store() {
                     "rating":{"rate":3.6,"count":145}
                 }
             ],
+            toggle: true
         })
-    })
+    })()
 }
