@@ -11,27 +11,20 @@ export default defineComponent({
 })
 </script>
 <template>
-   <div class="carousel-container">
-      <vue-carousel>
-        <slide class="first-bg">
+   <div class="flex w-[300%]">
+        <div class="first-bg">
 
-        </slide>
-        <slide class="sec-bg">
+        </div>
+        <div class="sec-bg">
         
-        </slide>
-        <slide class="third-bg">
+        </div>
+        <div class="third-bg">
         
-        </slide>
-      </vue-carousel>
+        </div>
     </div>
 </template>
 
 <style scoped>
-
-    .carousel-container{
-        width: 300%;
-        display: flex;
-    }
     .first-bg{
         background-image: url(../assets/cloth.jpg);
         height: 100vh;
