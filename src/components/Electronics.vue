@@ -20,7 +20,7 @@ export default defineComponent({
             </div>
         </div>
       </div>
-      <!-- for accessories -->
+      <!-- for Electronics -->
       <div class="px-4 md:px-20">
         <div class="grid lg:grid-cols-4 gap-8 sm:grid-cols-2">
             <!-- background -->
