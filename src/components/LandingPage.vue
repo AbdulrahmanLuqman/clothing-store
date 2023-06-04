@@ -11,15 +11,27 @@ export default defineComponent({
 })
 </script>
 <template>
-   <div class="flex w-[300%]">
+   <div class="cont flex w-[300%] z-[-99]">
         <div class="first-bg">
-
+            <div class="h-full flex flex-col gap-6 justify-center lg:pl-[100px] lg:w-[50%] pl-10">
+                <p class="lg:text-2xl text-[#B86EE7] ">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Porro, atque.</p>
+                <p class="text-base text-white font-semibold">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint eaque ullam optio voluptatum qui incidunt debitis assumenda, officia iste hic ex animi, autem, fugiat est veritatis quidem rem earum modi!</p>
+                <p class="w-fit h-fit bg-[#B86EE7] py-2 px-6 rounded-lg font-bold"><RouterLink to="/clothing">view clothing</RouterLink></p>   
+            </div>
         </div>
         <div class="sec-bg">
-        
+            <div class="h-full flex flex-col gap-6 justify-center lg:pl-[100px] lg:w-[50%] pl-10">
+                <p class="lg:text-2xl text-[#B86EE7] ">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Porro, atque.</p>
+                <p class="text-base text-white font-semibold">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint eaque ullam optio voluptatum qui incidunt debitis assumenda, officia iste hic ex animi, autem, fugiat est veritatis quidem rem earum modi!</p>
+                <p class="w-fit h-fit bg-[#B86EE7] py-2 px-6 rounded-lg font-bold"><RouterLink to="/accessories">view accessories</RouterLink></p>   
+            </div>
         </div>
         <div class="third-bg">
-        
+            <div class="h-full flex flex-col gap-6 justify-center lg:pl-[100px] lg:w-[50%] pl-10">
+                <p class="lg:text-2xl text-[#B86EE7] ">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Porro, atque.</p>
+                <p class="text-base text-white font-semibold">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint eaque ullam optio voluptatum qui incidunt debitis assumenda, officia iste hic ex animi, autem, fugiat est veritatis quidem rem earum modi!</p>
+                <p class="w-fit h-fit bg-[#B86EE7] py-2 px-6 rounded-lg font-bold"><RouterLink to="/electronics">view electronics</RouterLink></p>   
+            </div>
         </div>
     </div>
 </template>
@@ -48,5 +60,20 @@ export default defineComponent({
         background-size: cover;
         background-repeat: no-repeat;
         background-position: right;
+    }
+    .cont{
+        animation: slide 15s infinite 2s alternate ease;
+        position: relative;
+    }
+    @keyframes slide {
+        0%{
+            left: 0;
+        }
+        50%{
+            left: -100%;
+        }
+        100%{
+            left: -200%;
+        }
     }
 </style>
