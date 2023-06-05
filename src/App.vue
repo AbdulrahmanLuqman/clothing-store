@@ -16,9 +16,11 @@ export default defineComponent({
 </script>
 
 <template>
-  <Navbar />
+  <div class="overflow-hidden">
+    <Navbar />
 
-  <RouterView></RouterView>
+    <RouterView></RouterView>
+  </div>
 
 </template>
 
