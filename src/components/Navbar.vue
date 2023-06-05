@@ -24,7 +24,7 @@
         </RouterLink>
 
         <div class="flex items-center gap-20 h-full">
-            <nav class="flex items-center gap-8 h-full max-[860px]:h-fit max-[860px]:flex-col max-[860px]:bg-gray-200 max-[860px]:absolute max-[860px]:left-[-900px] transition-left duration-700 max-[860px]:top-[60px] max-[860px]:gap-0 max-[860px]:items-start max-[860px]:w-full" :class="slideOut ? 'max-[860px]:left-[0px]' : 'left-[-900px]'">
+            <nav class="flex items-center gap-8 h-full max-[860px]:h-fit max-[860px]:flex-col max-[860px]:bg-gray-200 max-[860px]:absolute transition-left duration-700 max-[860px]:top-[60px] max-[860px]:gap-0 max-[860px]:items-start max-[860px]:w-full" :class="slideOut ? 'max-[860px]:left-[0px]' : 'left-[-900px]'">
                 <p class="text-[17px] font-semibold hover:bg-[#B86EE7] hover:text-white h-fit py-[19px] w-fit px-10  max-[860px]:w-full cursor-pointer" @click="slideOut = !slideOut" title="clothing"><RouterLink to="/clothing">clothing</RouterLink></p>
                 <p class="text-[17px] font-semibold hover:bg-[#B86EE7] hover:text-white h-fit py-[19px] w-fit px-10  max-[860px]:w-full cursor-pointer" @click="slideOut = !slideOut" title="accessories"><RouterLink to="/accessories">accessories</RouterLink></p>
                 <p class="text-[17px] font-semibold hover:bg-[#B86EE7] hover:text-white h-fit py-[19px] w-fit px-10  max-[860px]:w-full cursor-pointer" @click="slideOut = !slideOut" title="electronics"><RouterLink to="/electronics">electronics</RouterLink></p>
