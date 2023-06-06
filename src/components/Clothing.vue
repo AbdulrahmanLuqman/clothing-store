@@ -6,7 +6,13 @@ export default defineComponent({
     data(){
         return{
             clothings: elementStore().$state.arrayStore,
-            toggle: elementStore().$state.toggle,        
+            toggle: elementStore().$state.toggle,   
+            showFull: elementStore().$state.showFull     
+        }
+    },
+    methods:{
+        onClick(data){
+            console.log(data)
         }
     }
 })
@@ -31,7 +37,8 @@ export default defineComponent({
         <!-- for men -->
         <div class="grid lg:grid-cols-4 gap-8 sm:grid-cols-2" v-if="toggle">
             <!-- background -->
-            <div class="h-[500px] w-full rounded-xl bg-white flex flex-col items-center justify-between" v-for="cloth in clothings" v-show=" cloth.category === 'mens clothing' ">
+        <RouterLink to="/onclick">   
+            <div class="h-[500px] w-full rounded-xl bg-white flex flex-col items-center justify-between" v-for="cloth in clothings" v-show=" cloth.category === 'mens clothing'" @click="onClick(cloth)">
                 <p class="text-[#B86EE7] text-[19px] text-center font-semibold">Category: men's clothing</p>
                 <img :src=cloth.image width="150" alt="">
                 <div class="bg-[#B86EE7] h-[30%] w-full rounded-b-xl p-4 flex flex-col justify-between">
@@ -39,6 +46,7 @@ export default defineComponent({
                    <p class="w-fit bg-white px-4 py-2 rounded-lg font-bold">${{ cloth.price }}</p>
                 </div>
             </div>
+        </RouterLink> 
         </div>
         <!-- for women -->
         <div class="grid lg:grid-cols-4 gap-8 sm:grid-cols-2" v-else>

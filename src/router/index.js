@@ -27,6 +27,11 @@ const router = createRouter({
         path: '/cart',
         name: 'Cart',
         component: ()=> import('../components/Cart.vue')
+    },
+    {
+        path: '/onclick',
+        name: 'Cart',
+        component: ()=> import('../components/Onclicks.vue')
     }
   ]
 })
