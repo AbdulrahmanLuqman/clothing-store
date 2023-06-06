@@ -204,7 +204,8 @@ export default function elementStore() {
                     "rating":{"rate":3.6,"count":145}
                 }
             ],
-            toggle: true
+            toggle: true,
+            showFull: true
         })
     })()
 }
