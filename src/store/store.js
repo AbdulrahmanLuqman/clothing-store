@@ -204,8 +204,10 @@ export default function elementStore() {
                     "rating":{"rate":3.6,"count":145}
                 }
             ],
+            singleCloth:{},
             toggle: true,
-            showFull: true
+            showFull: true,
+            hide: true
         })
     })()
 }
