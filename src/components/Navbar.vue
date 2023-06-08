@@ -25,9 +25,9 @@
 
         <div class="flex items-center gap-20 h-full">
             <nav class="flex items-center gap-8 h-full max-[860px]:h-fit max-[860px]:flex-col max-[860px]:bg-gray-200 max-[860px]:absolute max-[860px]:left-[-900px] transition-left duration-700 max-[860px]:top-[60px] max-[860px]:gap-0 max-[860px]:items-start max-[860px]:w-full" :class="slideOut ? 'max-[860px]:left-[0px]' : 'left-[-900px]'">
-                <p class="text-[17px] font-semibold hover:bg-[#B86EE7] hover:text-white h-fit py-[19px] w-fit px-10  max-[860px]:w-full cursor-pointer" @click="slideOut = !slideOut"><RouterLink to="/clothing">clothing</RouterLink></p>
-                <p class="text-[17px] font-semibold hover:bg-[#B86EE7] hover:text-white h-fit py-[19px] w-fit px-10  max-[860px]:w-full cursor-pointer" @click="slideOut = !slideOut"><RouterLink to="/accessories">accessories</RouterLink></p>
-                <p class="text-[17px] font-semibold hover:bg-[#B86EE7] hover:text-white h-fit py-[19px] w-fit px-10  max-[860px]:w-full cursor-pointer" @click="slideOut = !slideOut"><RouterLink to="/electronics">electronics</RouterLink></p>
+                <RouterLink to="/clothing"><p class="text-[17px] font-semibold hover:bg-[#B86EE7] hover:text-white h-fit py-[19px] w-fit px-10  max-[860px]:w-full cursor-pointer" @click="slideOut = !slideOut">clothing</p></RouterLink>
+                <RouterLink to="/accessories"><p class="text-[17px] font-semibold hover:bg-[#B86EE7] hover:text-white h-fit py-[19px] w-fit px-10  max-[860px]:w-full cursor-pointer" @click="slideOut = !slideOut">accessories</p></RouterLink>
+                <RouterLink to="/electronics"><p class="text-[17px] font-semibold hover:bg-[#B86EE7] hover:text-white h-fit py-[19px] w-fit px-10  max-[860px]:w-full cursor-pointer" @click="slideOut = !slideOut">electronics</p></RouterLink>
             </nav>
             <div class="cursor-pointer">
                 <RouterLink to="/cart"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><path fill="#B86EE7" d="M7 22q-.825 0-1.413-.588T5 20q0-.825.588-1.413T7 18q.825 0 1.413.588T9 20q0 .825-.588 1.413T7 22Zm10 0q-.825 0-1.413-.588T15 20q0-.825.588-1.413T17 18q.825 0 1.413.588T19 20q0 .825-.588 1.413T17 22ZM5.2 4h14.75q.575 0 .875.513t.025 1.037l-3.55 6.4q-.275.5-.738.775T15.55 13H8.1L7 15h12v2H7q-1.125 0-1.7-.988t-.05-1.962L6.6 11.6L3 4H1V2h3.25l.95 2Z"/></svg></RouterLink>
