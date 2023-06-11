@@ -204,6 +204,8 @@ export default function elementStore() {
                     "rating":{"rate":3.6,"count":145}
                 }
             ],
+            singleAccessory: {},
+            hideAcc: true,
             singleCloth:{},
             toggle: true,
             showFull: true,
