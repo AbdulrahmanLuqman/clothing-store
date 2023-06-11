@@ -11,7 +11,19 @@ const router = createRouter({
     {
         path: '/clothing',
         name: 'Clothing',
-        component: ()=> import('../components/Clothing.vue')
+        component: ()=> import('../components/Clothing.vue'),
+        children: [
+            {
+                path: '/clothing',
+                name: 'men',
+                component: () => import('../components/MenClothing.vue')
+            },
+            {
+                path: '/clothing/women',
+                name: 'women',
+                component: () => import('../components/WomenClothing.vue')
+            }
+        ]
     },
     {
         path: '/accessories',
@@ -27,6 +39,11 @@ const router = createRouter({
         path: '/cart',
         name: 'Cart',
         component: ()=> import('../components/Cart.vue')
+    },
+    {
+        path: '/onclick',
+        name: 'Cart',
+        component: ()=> import('../components/Onclicks.vue')
     }
   ]
 })

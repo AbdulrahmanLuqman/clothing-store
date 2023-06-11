@@ -204,9 +204,12 @@ export default function elementStore() {
                     "rating":{"rate":3.6,"count":145}
                 }
             ],
-            toggle: true,
             singleAccessory: {},
-            hideAcc: true
+            hideAcc: true,
+            singleCloth:{},
+            toggle: true,
+            showFull: true,
+            hide: true
         })
     })()
 }
